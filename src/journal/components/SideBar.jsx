@@ -2,7 +2,7 @@
 import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material"
 import { AccountCircle, Book, TurnedInNot } from "@mui/icons-material"
 
-export const SideBar = ({ drawerWidth = 240 }) => {
+export const SideBar = ({ drawerWidth = 500 }) => {
     return (
         <Box
             component='nav'
@@ -18,14 +18,14 @@ export const SideBar = ({ drawerWidth = 240 }) => {
             >
                 <Toolbar>
                     <AccountCircle />
-                    <Typography variant='h6' noWrap component='div' sx={{ ml: 1 }}>
-                        Juan Ramirez
+                    <Typography variant='h6' noWrap component='div' sx={{ xs: 1 }}>
+                        Juan Emanuel Ramirez
                     </Typography>
                 </Toolbar>
                 <Divider />
                 <List>
                     {
-                        ['Comunicación y Lenguaje L1', 'Matemáticas', 'Medio Social y Natural', 'Tecnológia'].map(text => (
+                        ['Usuarios','Visualizar Configuraciones', 'Generar Backup'].map(text => (
                             <ListItem key={ text } disablePadding>
                                 <ListItemButton>
                                     <ListItemIcon>
@@ -33,7 +33,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
                                     </ListItemIcon>
                                     <Grid container>
                                         <ListItemText  primary={ text }/>
-                                        <ListItemText  secondary={ 'Qui aute in reprehenderit anim ' }/>
+                                        <ListItemText  secondary={ 'Este modulo estaran disponible pronto...' }/>
                                     </Grid>
                                 </ListItemButton>
                             </ListItem>
